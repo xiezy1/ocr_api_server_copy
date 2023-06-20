@@ -17,7 +17,7 @@ def get_img(request, img_type='file', img_name='image'):
 ```
 
 # 请求方法 具体使用方法请查看README1.md
-```nodejs
+```javascript
 let url = 'http://ocr.xiezy.top/ocr/b64'
 let data = {"image":"data:image/png;base64,iVBORw0KG..."}
 return axios.post(url,data).then(res=>{
