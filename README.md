@@ -16,7 +16,11 @@ def get_img(request, img_type='file', img_name='image'):
     return img
 ```
 
-# 请求方法
-```json
-{"image":"data:image/png;base64,iVBORw0KG"}
+# 请求方法 具体使用方法请查看README1.md
+```nodejs
+let url = 'http://ocr.xiezy.top/ocr/b64'
+let data = "data:image/png;base64,iVBORw0KG..."
+return axios.post(url,data).then(res=>{
+    return res.data // 1923
+})
 ```
