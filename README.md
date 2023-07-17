@@ -24,3 +24,12 @@ return axios.post(url,data).then(res=>{
     return res.data // 1923
 })
 ```
+
+
+
+# 宝塔 Python 运行 出现 module 'PIL.Image' has no attribute 'ANTIALIAS' 解决办法
+
+### 去模块里卸载 Pillow 安装9.5.0版本
+```
+pip install Pillow==9.5.0
+```
